@@ -63,62 +63,15 @@ const page = ({ params }) => {
           height={720}
           alt=""
         />
-        <h1 className="my-8 text-[26px' font-semibold">Introduction:</h1>
-        <p>{data.description}</p>
-        <h3 className="my-5 text-[18px] font-semibold">
-          Step 1: Self-Reflection and Goal Setting
-        </h3>
-        <p className="my-3">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
-          consequuntur vitae placeat assumenda pariatur, ullam eos quia nihil
-          obcaecati voluptatem cum saepe quae id ipsam expedita doloremque
-          molestias repellendus tempora!
-        </p>
-        <p className="my-3">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam
-          repellendus sed consectetur sunt architecto temporibus quaerat culpa
-          explicabo quae distinctio. Sed, dolor? Eos distinctio rerum quibusdam
-          eligendi inventore totam ipsa!
-        </p>
-        <h3 className="my-5 text-[18px] font-semibold">
-          Step 2: Self-Reflection and Goal Setting
-        </h3>
-        <p className="my-3">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
-          consequuntur vitae placeat assumenda pariatur, ullam eos quia nihil
-          obcaecati voluptatem cum saepe quae id ipsam expedita doloremque
-          molestias repellendus tempora!
-        </p>
-        <p className="my-3">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam
-          repellendus sed consectetur sunt architecto temporibus quaerat culpa
-          explicabo quae distinctio. Sed, dolor? Eos distinctio rerum quibusdam
-          eligendi inventore totam ipsa!
-        </p>
-        <h3 className="my-5 text-[18px] font-semibold">
-          Step 3: Self-Reflection and Goal Setting
-        </h3>
-        <p className="my-3">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
-          consequuntur vitae placeat assumenda pariatur, ullam eos quia nihil
-          obcaecati voluptatem cum saepe quae id ipsam expedita doloremque
-          molestias repellendus tempora!
-        </p>
-        <p className="my-3">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam
-          repellendus sed consectetur sunt architecto temporibus quaerat culpa
-          explicabo quae distinctio. Sed, dolor? Eos distinctio rerum quibusdam
-          eligendi inventore totam ipsa!
-        </p>
-        <h3 className="my-5 text-[18px] font-semibold">Conclusion:</h3>
-        <p className="my-3">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi
-          expedita recusandae impedit blanditiis repudiandae ratione labore
-          itaque sunt quo, possimus omnis rem quas doloribus tempora quod
-          voluptatum non harum a.
-        </p>
+        <h1 className="my-8 text-[26px]' font-semibold">Introduction:</h1>
+        <div
+          className="blog-content"
+          dangerouslySetInnerHTML={{ __html: data.description }}
+        ></div>
         <div className="my-24">
-          <p>Share this article in social media</p>
+          <p className="text-black fonts-semibold my-4">
+            Share this article in social media
+          </p>
           <div className="flex">
             <Image src={assets.facebook_icon} width={50} alt="" />
             <Image src={assets.twitter_icon} width={50} alt="" />

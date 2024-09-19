@@ -35,7 +35,7 @@ const page = () => {
         title: "",
         description: "",
         category: "Startup",
-        author: "Alex Bennett",
+        author: "",
         authorImg: "/author_img.png",
       });
       toast(success ? "success" : "error");
@@ -72,6 +72,16 @@ const page = () => {
           className="w-full sm:w-[500px] mt-4 px-4 py-3 border"
           type="text"
           placeholder="Type here"
+          required
+        />
+        <p className="text-xl mt-4">Blog Author</p>
+        <input
+          type="text"
+          onChange={onChangeHandler}
+          value={data.author}
+          name="author"
+          className="w-full sm:w-[500px] mt-4 px-4 py-3 border"
+          placeholder="type here"
           required
         />
         <p className="text-xl mt-4">Blog description</p>
